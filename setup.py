@@ -15,12 +15,22 @@ setup(
     url="https://github/pyunity/pyunity-tools",
     packages=find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 3.7",
+        "Development Status :: 3 - Alpha",
+        "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: Microsoft :: Windows :: Windows 10",
+        "Intended Audience :: Developers",
+        "Natural Language :: English",
+        "Operating System :: MacOS",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: POSIX :: Linux",
     ],
     install_requires=[
-
+        "argparse",
+        "pyqt5"
     ],
-    python_requires='>=3.7',
+    entry_points={
+        "console_scripts": [
+            "pyunity-tools=pyunity_tools.cli:main"
+        ]
+    }
 )
