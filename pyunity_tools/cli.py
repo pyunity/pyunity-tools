@@ -13,14 +13,14 @@ def open_log(**kwargs):
         folder = os.path.join(os.getenv("appdata"), "PyUnity", "Logs")
     else:
         folder = os.path.join("/tmp", "pyunity", "logs")
-    if kwargs["open"] is not None:
-        if kwargs["open"] in ("latest", "newest"):
+    if kwargs["file"] is not None:
+        if kwargs["file"] in ("latest", "newest"):
             file = os.path.join(folder, "latest.log")
-        elif kwargs["open"] == "oldest":
+        elif kwargs["file"] == "oldest":
             file = glob.glob(
                 os.path.join(folder, "*.log"))[0]
         else:
-            raise click.BadParameter("open must be one of latest, newest or oldest")
+            raise click.BadParameter("\"file\" must be one of latest, newest or oldest")
         if kwargs["verbose"]:
             click.echo(file)
         if os.path.isfile(file):
@@ -38,15 +38,15 @@ def main():
     pass
 
 @main.command()
-@click.argument("open", required=False)
+@click.argument("file", required=False)
 @click.option("-v", "--verbose", is_flag=True, help="click.echo additional info")
 def logs(**kwargs):
     """
-    Opens a log according to OPEN, if specified.
+    Opens a log according to FILE, if specified.
     Otherwise opens the system file browser with
     the folder containing PyUnity logs.
 
-    OPEN can be one of latest, newest or oldest.
+    FILE can be one of latest, newest or oldest.
 
     """
     open_log(**kwargs)
