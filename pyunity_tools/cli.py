@@ -22,7 +22,7 @@ def open_log(**kwargs):
         else:
             raise click.BadParameter("open must be one of latest, newest or oldest")
         if kwargs["verbose"]:
-            print(file)
+            click.echo(file)
         if os.path.isfile(file):
             try:
                 os.startfile(file)
@@ -30,7 +30,7 @@ def open_log(**kwargs):
                 subprocess.call(["open", file])
     else:
         if kwargs["verbose"]:
-            print(folder)
+            click.echo(folder)
         webbrowser.open(folder)
 
 @click.group(context_settings=CONTEXT_SETTINGS)
@@ -39,7 +39,7 @@ def main():
 
 @main.command()
 @click.argument("open", required=False)
-@click.option("-v", "--verbose", is_flag=True, help="Print additional info")
+@click.option("-v", "--verbose", is_flag=True, help="click.echo additional info")
 def logs(**kwargs):
     """
     Opens a log according to OPEN, if specified.
