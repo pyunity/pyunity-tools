@@ -1,2 +1,3 @@
 argparse
 pyqt5
+click
