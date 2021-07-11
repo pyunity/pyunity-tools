@@ -13,6 +13,9 @@ def open_log(**kwargs):
         folder = os.path.join(os.getenv("appdata"), "PyUnity", "Logs")
     else:
         folder = os.path.join("/tmp", "pyunity", "logs")
+    if kwargs["clear"]:
+        for file in glob.glob(folder + "/*.log"):
+            os.remove(file)
     if kwargs["file"] is not None:
         if kwargs["file"] in ("latest", "newest"):
             file = os.path.join(folder, "latest.log")
@@ -40,6 +43,7 @@ def main():
 @main.command()
 @click.argument("file", required=False)
 @click.option("-v", "--verbose", is_flag=True, help="click.echo additional info")
+@click.option("-c", "--clear", is_flag=True, help="Delete all logs")
 def logs(**kwargs):
     """
     Opens a log according to FILE, if specified.
