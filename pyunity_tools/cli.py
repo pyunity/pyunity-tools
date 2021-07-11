@@ -23,7 +23,8 @@ def open_log(**kwargs):
             file = glob.glob(
                 os.path.join(folder, "*.log"))[0]
         else:
-            raise click.BadParameter("\"file\" must be one of latest, newest or oldest")
+            raise click.BadParameter(
+                "\"file\" must be one of latest, newest or oldest")
         if kwargs["verbose"]:
             click.echo(file)
         if os.path.isfile(file):
@@ -54,6 +55,24 @@ def logs(**kwargs):
 
     """
     open_log(**kwargs)
+
+@main.group()
+def project():
+    pass
+
+@project.command()
+@click.argument("name")
+@click.argument("path", required=False, default=".")
+def new(**kwargs):
+    """
+    Creates a new project in the folder PATH,
+    called NAME. Leaving out PATH will create
+    the project in the current working directory.
+
+    """
+    from .project import create_blank
+    create_blank(**kwargs)
+
 
 if __name__ == "__main__":
     main()

@@ -25,8 +25,9 @@ setup(
         "Operating System :: POSIX :: Linux",
     ],
     install_requires=[
-        "argparse",
-        "pyqt5"
+        "pyqt5",
+        "click",
+        "pyunity",
     ],
     entry_points={
         "console_scripts": [

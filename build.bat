@@ -1,7 +1,6 @@
 @ECHO OFF
 
-py prepare.py
-py -m autopep8 -i -r --ignore E301,E302 pyunity_tools setup.py prepare.py cli.py
+py -m autopep8 -i -r --ignore E301,E302 pyunity_tools setup.py cli.py
 py setup.py bdist_wheel sdist
 RMDIR /S /Q build\ pyunity_tools.egg-info\
 IF NOT [%1] == [] (
