@@ -4,6 +4,7 @@ import webbrowser
 import glob
 import platform
 import subprocess
+from .apps.viewer import main as viewer_main
 os.environ["PYUNITY_DEBUG_MODE"] = "0"
 
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
@@ -55,6 +56,15 @@ def logs(**kwargs):
 
     """
     open_log(**kwargs)
+
+@main.command()
+@click.argument("file")
+def viewer(file):
+    """
+    Opens the selected mesh file in an interactive viewer.
+    
+    """
+    viewer_main(file)
 
 @main.group()
 def project():
