@@ -1,6 +1,5 @@
 import os
 import click
-from pyunity import *
 from .. import current_dir
 
 def main(file):
@@ -9,6 +8,7 @@ def main(file):
     if not file.endswith(".mesh"):
         raise click.BadParameter("File is not in PyUnity Mesh format: " + repr(file))
     
+    from pyunity import Loader, SceneManager, MeshRenderer
     project = Loader.LoadProject(os.path.join(current_dir, "viewer", "viewer"))
     scene = SceneManager.GetSceneByIndex(0)
     mesh = Loader.LoadMesh(file)

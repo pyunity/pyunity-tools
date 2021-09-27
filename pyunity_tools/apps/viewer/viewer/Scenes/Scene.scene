@@ -1,57 +1,58 @@
-Scene : 7d5dfbcf-578d-4f36-95d1-b404bcda9e26
+Scene : 51fecf11-ac74-4af2-bc9b-1a0d6035df54
     name: "Scene"
-GameObject : 6abac930-3296-45f8-a61c-d7719497521e
+GameObject : afb1b59a-951a-406c-a0ee-dfd37df2379c
     name: "Main Camera"
     tag: 0
-    transform: 86fb9410-886c-44b8-be84-cf7c427e151f
-GameObject : a7dc9c09-8506-4066-a7e6-072b6ba57f04
+    transform: 9cf7eb0b-cd72-4201-9b99-af8cc9e37fbd
+GameObject : 702023a2-814f-4bed-878b-0b8d778743f3
     name: "Light"
     tag: 0
-    transform: 58adf71e-521b-43e2-ab36-4f19a935f778
-GameObject : cf41d3ce-4ce6-41cd-8697-e213f77bba17
+    transform: 18910a94-dc33-45d4-8a1c-e57a9ba5c7e9
+GameObject : 30d64868-da28-46fc-b8b1-6f6852eee6c2
     name: "Object"
     tag: 0
-    transform: 716d0c4e-3570-4b7b-99ed-ad12f4bd8539
-Transform(Component) : 86fb9410-886c-44b8-be84-cf7c427e151f
-    gameObject: 6abac930-3296-45f8-a61c-d7719497521e
+    transform: 852b0e6b-0d74-4fb1-8f73-ccb845b06492
+Transform(Component) : 9cf7eb0b-cd72-4201-9b99-af8cc9e37fbd
+    gameObject: afb1b59a-951a-406c-a0ee-dfd37df2379c
     localPosition: Vector3(0, 0, -10)
     localRotation: Quaternion(1, 0, 0, 0)
     localScale: Vector3(1, 1, 1)
     parent: None
-Camera(Component) : 821c9965-2e7c-4694-9a4b-4613fc7198ae
-    gameObject: 6abac930-3296-45f8-a61c-d7719497521e
+Camera(Component) : 33a17f38-b64c-433e-a5d3-12910ed78138
+    gameObject: afb1b59a-951a-406c-a0ee-dfd37df2379c
     clearColor: RGB(0, 0, 0)
     far: 200
     near: 0.05
-    shader: <pyunity.render.Shader object at 0x000001FB47E8F610>
-    skybox: <pyunity.files.Skybox object at 0x000001FB47E8F730>
+    shader: <pyunity.render.Shader object at 0x03FC3430>
+    skybox: <pyunity.files.Skybox object at 0x03FC33A0>
     skyboxEnabled: True
-AudioListener(Component) : c6785b2a-2319-43d0-9450-a879226968e2
-    gameObject: 6abac930-3296-45f8-a61c-d7719497521e
-Transform(Component) : 58adf71e-521b-43e2-ab36-4f19a935f778
-    gameObject: a7dc9c09-8506-4066-a7e6-072b6ba57f04
+AudioListener(Component) : 8bc19f4e-c9dd-430f-adf6-676d38ac1db4
+    gameObject: afb1b59a-951a-406c-a0ee-dfd37df2379c
+MouseViewer(Behaviour) : d67a1443-fa52-45ae-9f07-5f65b495b253
+    gameObject: afb1b59a-951a-406c-a0ee-dfd37df2379c
+    _script: 07bca102-0e29-4c21-bb68-70bf30bdafdc
+    other: 30d64868-da28-46fc-b8b1-6f6852eee6c2
+Transform(Component) : 18910a94-dc33-45d4-8a1c-e57a9ba5c7e9
+    gameObject: 702023a2-814f-4bed-878b-0b8d778743f3
     localPosition: Vector3(10, 10, -10)
     localRotation: Quaternion(1, 0, 0, 0)
     localScale: Vector3(1, 1, 1)
     parent: None
-Light(Component) : 94572fb2-de2e-4234-9086-a90c69b95972
-    gameObject: a7dc9c09-8506-4066-a7e6-072b6ba57f04
+Light(Component) : 6dae16d2-cf0e-4e9e-bd3c-4fb695f7b03a
+    gameObject: 702023a2-814f-4bed-878b-0b8d778743f3
     color: RGB(255, 255, 255)
     intensity: 100
-Transform(Component) : 716d0c4e-3570-4b7b-99ed-ad12f4bd8539
-    gameObject: cf41d3ce-4ce6-41cd-8697-e213f77bba17
+Transform(Component) : 852b0e6b-0d74-4fb1-8f73-ccb845b06492
+    gameObject: 30d64868-da28-46fc-b8b1-6f6852eee6c2
     localPosition: Vector3(0, 0, 0)
     localRotation: Quaternion(1, 0, 0, 0)
     localScale: Vector3(1, 1, 1)
     parent: None
-MeshRenderer(Component) : 65794791-c717-4961-b342-fd6c80dcbb6e
-    gameObject: cf41d3ce-4ce6-41cd-8697-e213f77bba17
-    mat: default
+MeshRenderer(Component) : bd3ef9b2-be8a-4f40-a665-1b874d326a57
+    gameObject: 30d64868-da28-46fc-b8b1-6f6852eee6c2
+    mat: 843d30a0-effb-4315-87f0-d49818be1384
     mesh: None
-ColorChanger(Behaviour) : 27d59aeb-68d3-4872-ba52-267181750bf8
-    gameObject: cf41d3ce-4ce6-41cd-8697-e213f77bba17
-    _script: 76510a0b-4b68-4f7f-bccf-084fbbc54bc5
-    renderer: 65794791-c717-4961-b342-fd6c80dcbb6e
-MouseViewer(Behaviour) : 7248be52-31ca-469e-84c0-b8083201e839
-    gameObject: cf41d3ce-4ce6-41cd-8697-e213f77bba17
-    _script: 71696a1f-6da8-4dae-b11f-2f32a4539986
+ColorChanger(Behaviour) : 763f85a5-9902-4c3b-8609-1884a7b452da
+    gameObject: 30d64868-da28-46fc-b8b1-6f6852eee6c2
+    _script: 0a1755c9-2d84-4fa8-ac34-87688dbbc34c
+    renderer: bd3ef9b2-be8a-4f40-a665-1b874d326a57

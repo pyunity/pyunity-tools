@@ -2,6 +2,7 @@ Project
     name: viewer
     firstScene: 0
 Files
-    f4bafef8-cd88-492f-bb4f-eed7c60c3d4b: Scenes/Scene.scene
-    76510a0b-4b68-4f7f-bccf-084fbbc54bc5: Scripts/ColorChanger.py
-    71696a1f-6da8-4dae-b11f-2f32a4539986: Scripts/MouseViewer.py
+    843d30a0-effb-4315-87f0-d49818be1384: Materials/Object.mat
+    99891a18-b565-4bf5-8dc8-b29902ceaf0b: Scenes/Scene.scene
+    0a1755c9-2d84-4fa8-ac34-87688dbbc34c: Scripts/ColorChanger.py
+    07bca102-0e29-4c21-bb68-70bf30bdafdc: Scripts/MouseViewer.py
