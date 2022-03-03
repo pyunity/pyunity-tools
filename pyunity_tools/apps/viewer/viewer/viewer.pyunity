@@ -1,8 +1,8 @@
 Project
     name: viewer
-    firstScene: 0
 Files
-    843d30a0-effb-4315-87f0-d49818be1384: Materials/Object.mat
-    99891a18-b565-4bf5-8dc8-b29902ceaf0b: Scenes/Scene.scene
-    0a1755c9-2d84-4fa8-ac34-87688dbbc34c: Scripts/ColorChanger.py
-    07bca102-0e29-4c21-bb68-70bf30bdafdc: Scripts/MouseViewer.py
+    18b5f094-a6c8-4a63-baee-55718b0bec2c: Scripts/MouseViewer.py
+    eb8138ff-ce6b-4f23-b529-42e3869774ab: Materials/Object.mat
+    30113d02-5655-42b1-9dc6-54d4b0f4f0a6: Meshes/Object.mesh
+    92c6e66e-b350-485f-8f90-2ca039908658: Scripts/ColorChanger.py
+    c2f9efb4-b16c-4b1b-bc0a-c581cc9fa881: Scenes/Scene.scene

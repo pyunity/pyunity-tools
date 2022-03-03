@@ -1,58 +1,62 @@
-Scene : 51fecf11-ac74-4af2-bc9b-1a0d6035df54
+Scene : c2f9efb4-b16c-4b1b-bc0a-c581cc9fa881
     name: "Scene"
-GameObject : afb1b59a-951a-406c-a0ee-dfd37df2379c
+    mainCamera: 2ba534e6-7c3a-496b-b620-30cac2e3fe6c
+GameObject : 4b9c7d23-c011-4022-bfec-6cfce1be1084
     name: "Main Camera"
     tag: 0
-    transform: 9cf7eb0b-cd72-4201-9b99-af8cc9e37fbd
-GameObject : 702023a2-814f-4bed-878b-0b8d778743f3
+    transform: 5af6e1a1-5546-44d6-a1aa-cd40ffc4ac07
+GameObject : 7c7ec379-21a1-4b43-8c4f-e137f4e941cd
     name: "Light"
     tag: 0
-    transform: 18910a94-dc33-45d4-8a1c-e57a9ba5c7e9
-GameObject : 30d64868-da28-46fc-b8b1-6f6852eee6c2
+    transform: 1647a5be-9487-4203-9a95-86dbffe250fd
+GameObject : d988cb78-a20a-4cb9-bc75-91d0908f63dd
     name: "Object"
     tag: 0
-    transform: 852b0e6b-0d74-4fb1-8f73-ccb845b06492
-Transform(Component) : 9cf7eb0b-cd72-4201-9b99-af8cc9e37fbd
-    gameObject: afb1b59a-951a-406c-a0ee-dfd37df2379c
-    localPosition: Vector3(0, 0, -10)
-    localRotation: Quaternion(1, 0, 0, 0)
-    localScale: Vector3(1, 1, 1)
-    parent: None
-Camera(Component) : 33a17f38-b64c-433e-a5d3-12910ed78138
-    gameObject: afb1b59a-951a-406c-a0ee-dfd37df2379c
-    clearColor: RGB(0, 0, 0)
-    far: 200
-    near: 0.05
-    shader: <pyunity.render.Shader object at 0x03FC3430>
-    skybox: <pyunity.files.Skybox object at 0x03FC33A0>
-    skyboxEnabled: True
-AudioListener(Component) : 8bc19f4e-c9dd-430f-adf6-676d38ac1db4
-    gameObject: afb1b59a-951a-406c-a0ee-dfd37df2379c
-MouseViewer(Behaviour) : d67a1443-fa52-45ae-9f07-5f65b495b253
-    gameObject: afb1b59a-951a-406c-a0ee-dfd37df2379c
-    _script: 07bca102-0e29-4c21-bb68-70bf30bdafdc
-    other: 30d64868-da28-46fc-b8b1-6f6852eee6c2
-Transform(Component) : 18910a94-dc33-45d4-8a1c-e57a9ba5c7e9
-    gameObject: 702023a2-814f-4bed-878b-0b8d778743f3
-    localPosition: Vector3(10, 10, -10)
-    localRotation: Quaternion(1, 0, 0, 0)
-    localScale: Vector3(1, 1, 1)
-    parent: None
-Light(Component) : 6dae16d2-cf0e-4e9e-bd3c-4fb695f7b03a
-    gameObject: 702023a2-814f-4bed-878b-0b8d778743f3
-    color: RGB(255, 255, 255)
-    intensity: 100
-Transform(Component) : 852b0e6b-0d74-4fb1-8f73-ccb845b06492
-    gameObject: 30d64868-da28-46fc-b8b1-6f6852eee6c2
+    transform: 55442ff3-5780-4efb-b85b-d8d2c57cd136
+Transform(Component) : 5af6e1a1-5546-44d6-a1aa-cd40ffc4ac07
+    gameObject: 4b9c7d23-c011-4022-bfec-6cfce1be1084
     localPosition: Vector3(0, 0, 0)
     localRotation: Quaternion(1, 0, 0, 0)
     localScale: Vector3(1, 1, 1)
     parent: None
-MeshRenderer(Component) : bd3ef9b2-be8a-4f40-a665-1b874d326a57
-    gameObject: 30d64868-da28-46fc-b8b1-6f6852eee6c2
-    mat: 843d30a0-effb-4315-87f0-d49818be1384
-    mesh: None
-ColorChanger(Behaviour) : 763f85a5-9902-4c3b-8609-1884a7b452da
-    gameObject: 30d64868-da28-46fc-b8b1-6f6852eee6c2
-    _script: 0a1755c9-2d84-4fa8-ac34-87688dbbc34c
-    renderer: bd3ef9b2-be8a-4f40-a665-1b874d326a57
+Camera(Component) : 2ba534e6-7c3a-496b-b620-30cac2e3fe6c
+    gameObject: 4b9c7d23-c011-4022-bfec-6cfce1be1084
+    clearColor: RGB(0, 0, 0)
+    far: 200
+    near: 0.05
+    ortho: False
+    shader: <pyunity.Shader object at 0x04307598>
+    skybox: <pyunity.Skybox object at 0x04307508>
+    skyboxEnabled: True
+AudioListener(Component) : 8fe8c3b0-eb95-47f5-ae7f-ee370c3e17f2
+    gameObject: 4b9c7d23-c011-4022-bfec-6cfce1be1084
+MouseViewer(Behaviour) : 50c90bf2-5402-460c-bdc8-dedbb88106d1
+    gameObject: 4b9c7d23-c011-4022-bfec-6cfce1be1084
+    distance: 10
+    other: d988cb78-a20a-4cb9-bc75-91d0908f63dd
+    _script: 18b5f094-a6c8-4a63-baee-55718b0bec2c
+Transform(Component) : 1647a5be-9487-4203-9a95-86dbffe250fd
+    gameObject: 7c7ec379-21a1-4b43-8c4f-e137f4e941cd
+    localPosition: Vector3(10, 10, -10)
+    localRotation: Quaternion(0.8535533905932737, -0.3535533905932738, 0.3535533905932738, -0.14644660940672624)
+    localScale: Vector3(1, 1, 1)
+    parent: None
+Light(Component) : 02424a35-8953-46bb-aba3-6efc25a019c4
+    gameObject: 7c7ec379-21a1-4b43-8c4f-e137f4e941cd
+    color: RGB(255, 255, 255)
+    intensity: 20
+    type: 1
+Transform(Component) : 55442ff3-5780-4efb-b85b-d8d2c57cd136
+    gameObject: d988cb78-a20a-4cb9-bc75-91d0908f63dd
+    localPosition: Vector3(0, 0, 0)
+    localRotation: Quaternion(1, 0, 0, 0)
+    localScale: Vector3(1, 1, 1)
+    parent: None
+MeshRenderer(Component) : 220b74b1-fead-442c-a5f5-4db0fdf11dfe
+    gameObject: d988cb78-a20a-4cb9-bc75-91d0908f63dd
+    mat: eb8138ff-ce6b-4f23-b529-42e3869774ab
+    mesh: 30113d02-5655-42b1-9dc6-54d4b0f4f0a6
+ColorChanger(Behaviour) : 8cb1814b-a121-40ef-b8a7-a1a359bc6d6c
+    gameObject: d988cb78-a20a-4cb9-bc75-91d0908f63dd
+    renderer: 220b74b1-fead-442c-a5f5-4db0fdf11dfe
+    _script: 92c6e66e-b350-485f-8f90-2ca039908658
