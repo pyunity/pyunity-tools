@@ -17,5 +17,5 @@ def main(file):
     project = Loader.LoadProject(os.path.join(current_dir, "viewer", "viewer"))
     scene = SceneManager.GetSceneByIndex(project.firstScene)
     mesh = funcs[file.rsplit(".", 1)[-1]](file)
-    scene.gameObjects[-1].GetComponent(MeshRenderer).mesh = mesh
+    scene.gameObjects[2].GetComponent(MeshRenderer).mesh = mesh
     SceneManager.LoadScene(scene)
